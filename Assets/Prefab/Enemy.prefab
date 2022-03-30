@@ -151,3 +151,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 1
   enemyPoint: 0
+  enemyBulletPrefab: {fileID: 7441523392267847275, guid: 4c2dfc26ad5e687448f41f886a3a8a4a, type: 3}
+  offset: {x: 0, y: -0.9, z: 0}

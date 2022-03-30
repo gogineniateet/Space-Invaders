@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerLife : MonoBehaviour
 {
     public static int playerLife = 3;
+    public Text Health;
     public bool isGameOver;
     public GameObject gameOverPanel;
     public GameObject player;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +23,15 @@ public class PlayerLife : MonoBehaviour
     {
         if(playerLife == 0)
         {
-            isGameOver = true;
+            Destroy(player);
             gameOverPanel.SetActive(true);
-            player.SetActive(false);
-            //Debug.Log("Game Over");
         }
+    }
+    
+    public void PlayerHealth(int playerHealth)
+    {
+        Health.text = playerLife.ToString();
+        playerLife = playerLife + playerHealth;
+        Debug.Log(playerLife);
     }
 }

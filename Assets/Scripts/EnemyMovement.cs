@@ -6,21 +6,12 @@ public class EnemyMovement : MonoBehaviour
 {
     public float enemySpeed;
     public int enemyPoint = 0;
-    public GameObject enemyBulletPrefab;
     public Vector3 offset;
     public float time;
 
 
     void Update()
     {
-        //transform.position = new Vector2(transform.position.x + enemySpeed * Time.deltaTime, transform.position.y);
-        time = time + Time.deltaTime;
-        if (time > 3f)
-        {
-            Instantiate(enemyBulletPrefab, transform.position + offset, Quaternion.identity);
-            time = 0f;
-        }
-        
         if (enemyPoint == 0)
         {
             RightMovement();

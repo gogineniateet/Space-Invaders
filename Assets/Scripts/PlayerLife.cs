@@ -8,7 +8,7 @@ public class PlayerLife : MonoBehaviour
     public static int playerLife = 3;
     public Text Health;
     public bool isGameOver;
-    //public GameObject gameOverPanel;
+    public GameObject gameOverPanel;
     public GameObject player;
 
 
@@ -24,7 +24,8 @@ public class PlayerLife : MonoBehaviour
         if(playerLife == 0)
         {
             Destroy(player);
-            //gameOverPanel.SetActive(true);
+            Debug.Log("GameOver");
+            gameOverPanel.SetActive(true);
         }
     }
     
@@ -34,6 +35,5 @@ public class PlayerLife : MonoBehaviour
         playerLife = playerLife + playerHealth;
         Health.text = playerLife.ToString();
         Debug.Log(playerLife);
-        Debug.Log("GameOver");
     }
 }

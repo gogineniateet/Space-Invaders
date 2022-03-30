@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f8d3878ccdbd54daa8d0ff909caa71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7717666094786132496, guid: 95af36f0bb14e5647985aa8a1baa65e0, type: 3}
+  enemyPrefab: {fileID: 4967514236308572994, guid: 456b8c802944c034cb9ffb8be3632a1d, type: 3}
 --- !u!114 &190940825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,7 +952,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 3
 --- !u!222 &741809874
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
